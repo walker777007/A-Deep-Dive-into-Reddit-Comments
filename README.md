@@ -46,7 +46,7 @@ The most common words can be seen below:
 
 One interesting I had noticed in the data, was the discrepancy in the comment lengths between gender based subreddits.  
 <p align="center">
-<img src="plots/genderedcommentlength.png" width="450" height="300">
+<img src="plots/genderedcommentlength.png" width="300" height="200">
 </p>
 
 ## Emotional Sentiment Analysis
