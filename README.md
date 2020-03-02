@@ -41,12 +41,12 @@ Ignoring stop words, the corpus contained 253,725 unique words and each comment 
 
 The most common words can be seen below:
 <p align="center">
-<img src="plots/wordcloud.png" width="800" height="550">
+<img src="plots/wordcloud.png" width="300" height="200">
 </p>
 
 One interesting I had noticed in the data, was the discrepancy in the comment lengths between gender based subreddits.  
 <p align="center">
-<img src="plots/genderedcommentlength.png" width="300" height="200">
+<img src="plots/genderedcommentlength.png" width="800" height="550">
 </p>
 
 ## Emotional Sentiment Analysis
