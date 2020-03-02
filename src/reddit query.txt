@@ -1,0 +1,23 @@
+#standardSQL
+SELECT author, created_utc, subreddit, score, body
+FROM `fh-bigquery.reddit_comments.2019_09` 
+WHERE subreddit = 'neoliberal' 
+  AND body != '[deleted]'
+  AND body != '[removed]'
+  and author != 'AutoModerator'
+  AND NOT REGEXP_CONTAINS(body,'http')
+  AND NOT REGEXP_CONTAINS(body,'�')
+  AND NOT REGEXP_CONTAINS(body,'⠿')
+  AND NOT STARTS_WITH(body,'[')
+  AND NOT STARTS_WITH(body,'/u/')
+  AND CHAR_LENGTH(body) > 100
+  AND score > 0
+ORDER BY score DESC
+LIMIT 16000
+
+#standardSQL
+SELECT subreddit, COUNT(body)
+FROM `fh-bigquery.reddit_comments.2019_09`
+GROUP BY subreddit
+ORDER BY COUNT(body) DESC
+LIMIT 100
