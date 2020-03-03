@@ -106,3 +106,7 @@ Here we can see the silhouette score of 61 clusters along with a visual represnt
 <p align="center">
 <img src="plots/kmeans61.png" width="1000" height="500">
 </p>
+And here we an get a look at the cluster on the original 1 million + dataset:
+<p align="center">
+<img src="plots/kmeanstotal61.png" width="1000" height="500">
+</p>
