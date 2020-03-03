@@ -100,4 +100,9 @@ As we can see in the zoomed in case and the case above it, the methods applied w
 <p align="center">
 <img src="plots/silhouette_scores.png" width="800" height="550">
 </p>
-We can see that the lower numbers produce higher scores, but there are periodic peaks which reveal that there is an underlying subtopic split that can be learned.
+We can see that the lower numbers produce higher scores, but there are periodic peaks which reveal that there is an underlying subtopic split that can be learned.  I went with 61 clusters, as I wanted to produce the maximum number of subtopics without excessive overlap.
+
+Here we can see the silhouette score of 61 clusters along with a visual represntation:
+<p align="center">
+<img src="plots/kmeans61.png" width="1000" height="500">
+</p>
