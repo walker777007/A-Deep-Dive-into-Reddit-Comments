@@ -122,7 +122,7 @@ Here are some examples of the topics the clustering was able to pick up, using s
   * Strong growth story. Similar to many others in China. Really uncertain how it will fare. That said its probably the cheapest growth you can buy, but it comes with massive market and government risk. High risk high reward. Not a bad buy but a risky and long term one.
   * The underlying economy remains strong and feds will continue to lower rates if it starts to falter. Of course it won’t last forever but I feel this market still have some legs. This tariff thing is just noise on the market and a good opportunity.
 
-* **Cluster 14**: "Movies Marvel/Star Wars"
+* **Cluster 14**: "Movies (Marvel/Star Wars)"
   * What an experience. Here are my initial thoughts, could change. This move was extremely epic, very entertaining, and thoroughly satisfying. It definitely has some of the very best moments in all of the MCU. I think you could make the argument Infinity War was a better movie, and I think I would agree with that. But what we got was such an awesome conclusion and a huge thank you to all of the fans. It was a very different movie than IW and was exactly what it needed to be. I loved it.
   * I really like this character in the MCU. I scoffed when I first heard they were making a solo movie but I really enjoyed it. I never thought I would say that about Ant-Man.
   * Rogue One made some mistakes but the Death Troopers sure as hell aren’t one of them. Ever since I first saw these guys they became my favorite trooper by far. I just didn’t like that they suddenly became as incompetent as a battle droid, right after the movie showed us how lethal they are.
