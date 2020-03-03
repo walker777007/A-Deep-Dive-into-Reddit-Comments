@@ -24,7 +24,7 @@
 
 ## Motivation
 
-I've used reddit over the years, and I was curious how some of the more popular subreddits were related to each other.  Reddit(https://reddit.com) covers a lot of topics, from sports, video games, food, film, and much more.  My idea is to represent all of these topics by collecting reddit comments and clustering them together so I could essentially show the common themes and topics people are talking about, and the common ties between certain subreddits.
+I've used reddit over the years, and I was curious how some of the more popular subreddits were related to each other.  [Reddit](https://reddit.com) covers a lot of topics, from sports, video games, food, film, and much more.  My idea is to represent all of these topics by collecting reddit comments and clustering them together so I could essentially show the common themes and topics people are talking about, and the common ties between certain subreddits.
 
 ## Data exploration
 
