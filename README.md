@@ -83,4 +83,12 @@ I contemplated training my own Word2Vec on my corpus, but I learned there are pu
 
 ### T-distributed Stochastic Neighbor Embedding
 
-Once I had the feature matrix, a 1,010,000 by 200 array, I needed a way to reduce its dimensionality in order to visually cluster them. A method that preserves high dimensional clusters and geometry would be ideal, and [t-distributed stochastic neighbor embedding](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) does this.  First it constructs a probability distribution over high dimensional objects in such a way that similar objects have a high probability of being picked while dissimilar points have a low probability of being chosen. It then creates a similar probability distribution over the points in the low-dimensional map, minimizing the [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) between the two distributions with respect to the locations of the points in the map.  If you want to play around with pretty graphs while getting an understanding of how this process works, [this interactive article](https://distill.pub/2016/misread-tsne/) helped me a lot.
+Once I had the feature matrix, a 1,010,000 by 200 array, I needed a way to reduce its dimensionality in order to visually cluster them. A method that preserves high dimensional clusters and geometry would be ideal, and [t-distributed stochastic neighbor embedding](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding) (TSNE) does this.  First it constructs a probability distribution over high dimensional objects in such a way that similar objects have a high probability of being picked while dissimilar points have a low probability of being chosen. It then creates a similar probability distribution over the points in the low-dimensional map, minimizing the [Kullback–Leibler divergence](https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence) between the two distributions with respect to the locations of the points in the map.  If you want to play around with pretty graphs while getting an understanding of how this process works, [this interactive article](https://distill.pub/2016/misread-tsne/) helped me a lot.
+
+Here we can see the result of TSNE on all of our comments, including the means of the subreddits overlayed.
+<p align="center">
+<img src="plots/tsne_w_subreddit_means.png" width="1000" height="500">
+</p>
+<p align="center">
+<img src="plots/tsne_w_subreddit_means_zoomed.png" width="1000" height="500">
+</p>
