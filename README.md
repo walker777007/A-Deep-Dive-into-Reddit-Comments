@@ -92,3 +92,12 @@ Here we can see the result of TSNE on all of our comments, including the means o
 <p align="center">
 <img src="plots/tsne_w_subreddit_means_zoomed.png" width="1000" height="500">
 </p>
+As we can see in the zoomed in case and the case above it, the methods applied were able to group together similar subreddits.  The food subreddits are very distinct from the rest, and the sports politics, animals subreddits form their own individual clusters.  To my surprise, the meme subreddits tend to be clustered as well, which I doubted since they tend to cover multiple different topics, albeit with similar humor.  However, the more vague and popular subreddits seem to be a bit looser in the clustering, and fall mainly in the middle "blob".
+
+### K-Means Clustering
+
+[K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) is a method of grouping data into similar groups by minimizing the within-cluster variances (squared Euclidean distances).  Picking the ideal number of clusters can be tough, as each can have different interpretations.  For example, a few clusters may separate overarching topics while a larger number may pick out smaller differences, albeit with possible higher overlap.  In order to decide the ideal number, I took a random sample of 1000 comments from each subreddit (silhouette scoring is computationally heavy) and looked at the silhouette scores of 2-100 clusters.  The [silhouette score](https://en.wikipedia.org/wiki/Silhouette_(clustering) measures how similar an object is to its own cluster by through the use of a distance metric, and it ranges from -1 to 1.
+<p align="center">
+<img src="plots/silhouette_scores.png" width="800" height="550">
+</p>
+We can see that the lower numbers produce higher scores, but there are periodic peaks which reveal that there is an underlying subtopic split that can be learned.
