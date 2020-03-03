@@ -39,7 +39,7 @@ Once all the indivudal CSV files were queried using SQL, I used pandas in order 
 
 Ignoring stop words, the corpus contained 253,725 unique words and each comment had an average length of ~ 27 words.
 
-The most common words can be seen below:
+The most common words can be seen below.  They tend to be generic, albeit non-stopwords.  As we will see later, these words don't have nearly the impact in clustering topics as other specific words will:
 <p align="center">
 <img src="plots/wordcloud.png" width="525" height="350">
 </p>
@@ -50,3 +50,14 @@ One interesting I had noticed in the data, was the discrepancy in the comment le
 </p>
 
 ## Emotional Sentiment Analysis
+
+Using the [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm), I thought it would be interesting to see how the emotional sentiments of certain subreddits compared to each other.  The way the NRC Emotion Lexicon works is that certain words are scored as anger, anticipation, disgust, fear, joy, sadness, surprise, trust and positive, negative.  The way in which I applied this was by essentially parsing each word in the comment and scoring each emotion as the number of emotional words divided by the total amount of words in the comment.  Here we can see the top 10 subreddits for the emotions of anger, joy (I call it happy), and sadness.
+<p align="center">
+<img src="plots/angrysubreddits.png" width="800" height="382">
+</p>
+<p align="center">
+<img src="plots/happysubreddits.png" width="800" height="382">
+</p>
+<p align="center">
+<img src="plots/sadsubreddits.png" width="800" height="382">
+</p>
