@@ -110,9 +110,66 @@ And here we an get a look at the cluster on the original 1 million + dataset:
 <p align="center">
 <img src="plots/kmeanstotal61.png" width="1000" height="500">
 </p>
-Here are some examples of the topics the clustering was able to pick up:
+Here are some examples of the topics the clustering was able to pick up, using some of the nearest comments to the cluster centroid:
 
-* **Cluster 0**: Travel
+* **Cluster 0**: "Travel"
   * St George is a cool place! Just had Nielsons Frozen Custard and was very pleased. Will definitely come back for more Zion and hikes around the area
   * They use haystack as a reference point for finding the cave. Cannon beach where haystack rock is wasn’t actually in the movie though. It was filmed up in Astoria.
   * Hey, this was here in Croatia! The guy couldn't afford a ticket so he used the umbrella to get to an island from the shore. It was this summer.
+
+* **Cluster 11**: "Finance"
+  * You are being conservative. Lot of folks here are out-doing each other on their conservative-ness (I mean, 3% long term returns, come on! Buy some 30 year treasury bonds if you’re that dismal on the future).
+  * Strong growth story. Similar to many others in China. Really uncertain how it will fare. That said its probably the cheapest growth you can buy, but it comes with massive market and government risk. High risk high reward. Not a bad buy but a risky and long term one.
+  * The underlying economy remains strong and feds will continue to lower rates if it starts to falter. Of course it won’t last forever but I feel this market still have some legs. This tariff thing is just noise on the market and a good opportunity.
+
+* **Cluster 14**: "Movies Marvel/Star Wars"
+  * What an experience. Here are my initial thoughts, could change. This move was extremely epic, very entertaining, and thoroughly satisfying. It definitely has some of the very best moments in all of the MCU. I think you could make the argument Infinity War was a better movie, and I think I would agree with that. But what we got was such an awesome conclusion and a huge thank you to all of the fans. It was a very different movie than IW and was exactly what it needed to be. I loved it.
+  * I really like this character in the MCU. I scoffed when I first heard they were making a solo movie but I really enjoyed it. I never thought I would say that about Ant-Man.
+  * Rogue One made some mistakes but the Death Troopers sure as hell aren’t one of them. Ever since I first saw these guys they became my favorite trooper by far. I just didn’t like that they suddenly became as incompetent as a battle droid, right after the movie showed us how lethal they are.
+
+* **Cluster 17**: "Sports (Football/Basketball/Baseball)"
+  * Roger Goodell banned touchdown celebrations for years, I don’t  think it’s safe to assume what the NFL considers viewership draws
+  * "Mike Trout is back in the lineup tonight, although as DH so he'll only be making mortal contributions to his WAR."
+  * Shaquille O'Neal's response to a rookie Dwight Howard trying to get in his head while Shaq was at the FT line: "Rook, I am the worst fucking shooter in the league. In the league, understand? And you're up here trying to f*cking tell me something?" Shaq stared down Dwight after missing both free throws.
+
+* **Cluster 21**: "Politics (Trump)"
+  * The problem is Trump will have to sign it or a veto override will be required. Neither is likely to occur.
+  * He knows exactly how subpoenas work.  He's just trying to punt his hearing until after Barr's confirmation. If he receives written assurances he won't be subpoenaed, he won't show. If he gets subpoenaed, he fights it in court and won't show until after Barr is confirmed by the senate.
+  * Congress passed a law that granted the president the authority to "from time to time, withdraw from disposition any of the unleased lands of the outer Continental Shelf". The Trump administration claimed this grant implicitly included the authority to put lands back into disposition afer they had been withdrawn. The judge disagreed, reasoning that if Congress had meant to grant the president that authority it would have done so explicitly. The judge made a defensible call and very possibly the right one. And I say this as someone who thinks many of the rulings against the Trump administration have been wrong and politically-biased.
+
+* **Cluster 24**: "Animals (Cats/Dogs)"
+  * The best mix. Our Isabel is extremely attentive, loves kids and other dogs and just about any creature you introduce her to. Enjoy life together!
+  * My wife did this (herself, not as a shelter) for years - so now we have 13 formerly unadoptable kitties getting older with us. Even rascally semi-feral kitties can benefit from a forever home, so thank you for taking on the challenge!
+  * Indeed she is. she puts up with a lot! Especially me, her mother who insists on dressing her up for holidays and walking her on a leash for exercise.
+
+* **Cluster 24**: "Music"
+  * No Time was one of the best songs from 2018, so hoping this Carti Gunna song is from the same session when they were recording that. And what do you mean you were hoping for something shorter? This is going to be a total of like 45 min max lol
+  * It's one of those perfect examples of a music video that elevates a song to another level of enjoyability. They work in tandem so smoothly that it would probably be worse with any other combination.
+  * Nobody in Slipknot should ever insult another band. They’re like metal for 12 year olds who just discovered the genre. Plus Corey Taylor should honestly just shut the fuck up. He's the lead singer of Stone Sour who are easily in the conversation with these other shit shows as "worst band ever".
+
+* **Cluster 33**: "Cars"
+  * Lowering kit, underglow, cat delete, autozone special 'CAI', a couple decals, shiny chrome rims, and a ridiculous amount of camber. Bugatti Chirice.
+  * Is this one of those new cars where they make it hard to photograph while test driving them in real life?
+  * My sister bought a used Dodge Caliber. I feel like it's a strong contender in this battle. That car has given me an existential crisis regarding manuals. It is without a doubt the worst manual I've ever driven, making me ask "is an awful manual better than a 4 speed automatic?"
+
+* **Cluster 33**: "Video Games"
+  * It also includes a pokedex of all pokemon introduced in that gen. I had one for Black/White when I was a kid and I loved reading it.
+  * Wow, what an informative response! Very interesting. The gamer in me wants to relate this to Battlefield V. The German Stuka is in the game and has that crazy unique whine and it’s very cool. However all prop planes in the game also have a similar whine so that bit of information was new to me!
+  * It's still crazy to me that for a lot of kids, Minecraft was 90% about watching Youtube videos. There was this whole enormous kids' culture of Minecraft going on while we were just university students playing on a server together.
+
+* **Cluster 40**: "Clothes/Fashion"
+  * How do people wear this in the summer? I'm sweating in a button-up and jeans, let alone another layer on top. But whenever I go to Europe people are wearing like four layers. Has AC just made me weak?
+  * Honestly, I feel like every other color than the black/white compliments the shoes so well. Pink is definitely my fav rn
+  * I like the outfit with the jacket on! Keeps it simple and clean. Without the jacket, the hoodie sleeves are a bit overwhelming. Also dope choice in eyewear. I’ve been looking at the Damir Doma collabs for a while, but they haven’t dropped in price for the past year!
+
+* **Cluster 43**: "Food"
+  * It's almost like eating like a whipped yogurt meets angel food cake, at least from a texture standpoint.  The flavor is just not good.  It's kind of an odd bland flavor, kind of like meringue or something.
+  * Similarly with vegan chocolate, it doesn’t taste as rich Which is funny because high-end dark chocolate is often accidentally vegan.
+  * It's VERY safe since the ink is sterile and the paper is clean.  Serve fish n' chips on it a lot.  Clam/lobster/shrimp boils too. Lay it all out on the table and nosh on!
+
+* **Cluster 54**: "PC/Camera Hardware"
+  * I've posted before that I felt the current Fuji is what Pentax should've been. Remember when the K7 came out? It was a small body that could take a beating, a hint of retro styling before full retro styling became fashionable again. They had these adorable limited primes that at that point no one else did. Pentax users were loyal and viciously defensive (they still are lol), and as a whole the Pentax concept was kind of, well...quirky. THAT'S the perfect company to produce small mirrorless retro-styled cameras that don't rely on cutting edge technology. Fuji XT100, Olympus Pen, where's the mirrorless K1000, Pentax?
+  * SSDs.  Honestly, I thought they were just for the boot partition, and nothing else. Built a high end PC with a 1tb ssd about 3 years back, thinking I'd have to get a a hard drive etc..... will never buy spinning metal again. edit : I kind of jumped on the bandwagon at exactly the right time, to be honest.  Got a decent deal for a 1tb SSD 3 years ago, and thought I might upgrade later.  SSD prices remained pretty much stable for 2 years after that, it's only recently they've come down. edit2 : Also, the upgrading of my internet account made a difference.  I used to be on 2mbps.  Now I can delete games and reinstall them without the 24 hour+ wait.
+  * All of MSIs and Gigabytes Mid range B450 and above have Bios Flashback. I can't remember for other vendors.
+
+  Other topics included life advice, guns, philosophy/logic, fitness, and more.  Others seemed focus on language rather than content.  One specifically had many comments that used % and $ symbols, and another specifically had comments explicitly referencing subreddits, so a lot of 'r/' tokens.
