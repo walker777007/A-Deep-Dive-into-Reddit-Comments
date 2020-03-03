@@ -63,5 +63,5 @@ Using the [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Le
 </p>
 As well, I decided to use t-distributed stochastic neighbor embedding (which I will explain later) in order to reduce the 10 dimension emotion vector of each subreddit into 2 dimensions, which visually represents the "emotional position" of each subreddit in relation to each other.
 <p align="center">
-<img src="plots/sentimentmap.png" width="800" height="382">
+<img src="plots/sentimentmap.png" width="1000" height="475">
 </p>
