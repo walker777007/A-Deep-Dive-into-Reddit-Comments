@@ -142,7 +142,7 @@ Here are some examples of the topics the clustering was able to pick up, using s
   * My wife did this (herself, not as a shelter) for years - so now we have 13 formerly unadoptable kitties getting older with us. Even rascally semi-feral kitties can benefit from a forever home, so thank you for taking on the challenge!
   * Indeed she is. she puts up with a lot! Especially me, her mother who insists on dressing her up for holidays and walking her on a leash for exercise.
 
-* **Cluster 24**: "Music"
+* **Cluster 28**: "Music"
   * No Time was one of the best songs from 2018, so hoping this Carti Gunna song is from the same session when they were recording that. And what do you mean you were hoping for something shorter? This is going to be a total of like 45 min max lol
   * It's one of those perfect examples of a music video that elevates a song to another level of enjoyability. They work in tandem so smoothly that it would probably be worse with any other combination.
   * Nobody in Slipknot should ever insult another band. They’re like metal for 12 year olds who just discovered the genre. Plus Corey Taylor should honestly just shut the fuck up. He's the lead singer of Stone Sour who are easily in the conversation with these other shit shows as "worst band ever".
@@ -152,7 +152,7 @@ Here are some examples of the topics the clustering was able to pick up, using s
   * Is this one of those new cars where they make it hard to photograph while test driving them in real life?
   * My sister bought a used Dodge Caliber. I feel like it's a strong contender in this battle. That car has given me an existential crisis regarding manuals. It is without a doubt the worst manual I've ever driven, making me ask "is an awful manual better than a 4 speed automatic?"
 
-* **Cluster 33**: "Video Games"
+* **Cluster 38**: "Video Games"
   * It also includes a pokedex of all pokemon introduced in that gen. I had one for Black/White when I was a kid and I loved reading it.
   * Wow, what an informative response! Very interesting. The gamer in me wants to relate this to Battlefield V. The German Stuka is in the game and has that crazy unique whine and it’s very cool. However all prop planes in the game also have a similar whine so that bit of information was new to me!
   * It's still crazy to me that for a lot of kids, Minecraft was 90% about watching Youtube videos. There was this whole enormous kids' culture of Minecraft going on while we were just university students playing on a server together.
@@ -173,3 +173,8 @@ Here are some examples of the topics the clustering was able to pick up, using s
   * All of MSIs and Gigabytes Mid range B450 and above have Bios Flashback. I can't remember for other vendors.
 
   Other topics included life advice, guns, philosophy/logic, fitness, and more.  Others seemed focus on language rather than content.  One specifically had many comments that used % and $ symbols, and another specifically had comments explicitly referencing subreddits, so a lot of 'r/' tokens.
+
+## Conclusion
+
+With the techniques I applied, it seems very possible to be able to divide text into multiple thematic or language groupings based on their content.  This can be applied across several fields, and categorizing text has a near infinite amount of uses.  
+For my own goal, it appears that subreddits have quite a lot of common themes and shared emotional sentiments.  In the future I'd like to apply the Google News Word2Vec model, and ideally train my own Word2Vec or Doc2Vec model as it would likely be even better at dividing comments since it would be trained on reddit's vocabulary.
