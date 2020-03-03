@@ -110,3 +110,8 @@ And here we an get a look at the cluster on the original 1 million + dataset:
 <p align="center">
 <img src="plots/kmeanstotal61.png" width="1000" height="500">
 </p>
+Here are some examples of the topics the clustering was able to pick up:
+**Cluster 0**: Travel
+  * St George is a cool place! Just had Nielsons Frozen Custard and was very pleased. Will definitely come back for more Zion and hikes around the area
+  * They use haystack as a reference point for finding the cave. Cannon beach where haystack rock is wasn’t actually in the movie though. It was filmed up in Astoria.
+  * Hey, this was here in Croatia! The guy couldn't afford a ticket so he used the umbrella to get to an island from the shore. It was this summer.
