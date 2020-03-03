@@ -51,7 +51,7 @@ One interesting I had noticed in the data, was the discrepancy in the comment le
 
 ## Emotional Sentiment Analysis
 
-Using the [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm), I thought it would be interesting to see how the emotional sentiments of certain subreddits compared to each other.  The way the NRC Emotion Lexicon works is that certain words are scored as anger, anticipation, disgust, fear, joy, sadness, surprise, trust and positive, negative.  The way in which I applied this was by essentially parsing each word in the comment and scoring each emotion as the number of emotional words divided by the total amount of words in the comment.  Here we can see the top 10 subreddits for the emotions of anger, joy (I call it happy), and sadness.
+Using the [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm), I thought it would be interesting to see how the emotional sentiments of certain subreddits compared to each other.  The way the NRC Emotion Lexicon works is that certain words are scored as anger, anticipation, disgust, fear, joy, sadness, surprise, trust and positive, negative.  The way in which I applied this was by essentially parsing each word in the comment and scoring each emotion as the number of emotional words divided by the total amount of words in the comment, and then averaging this number for each subreddit.  Here we can see the top 10 subreddits for the emotions of anger, joy (I call it happy), and sadness.
 <p align="center">
 <img src="plots/angrysubreddits.png" width="800" height="382">
 </p>
@@ -60,4 +60,8 @@ Using the [NRC Emotion Lexicon](https://saifmohammad.com/WebPages/NRC-Emotion-Le
 </p>
 <p align="center">
 <img src="plots/sadsubreddits.png" width="800" height="382">
+</p>
+As well, I decided to use t-distributed stochastic neighbor embedding (which I will explain later) in order to reduce the 10 dimension emotion vector of each subreddit into 2 dimensions, which visually represents the "emotional position" of each subreddit in relation to each other.
+<p align="center">
+<img src="plots/sentimentmap.png" width="800" height="382">
 </p>
