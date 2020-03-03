@@ -172,7 +172,7 @@ Here are some examples of the topics the clustering was able to pick up, using s
   * SSDs.  Honestly, I thought they were just for the boot partition, and nothing else. Built a high end PC with a 1tb ssd about 3 years back, thinking I'd have to get a a hard drive etc..... will never buy spinning metal again. edit : I kind of jumped on the bandwagon at exactly the right time, to be honest.  Got a decent deal for a 1tb SSD 3 years ago, and thought I might upgrade later.  SSD prices remained pretty much stable for 2 years after that, it's only recently they've come down. edit2 : Also, the upgrading of my internet account made a difference.  I used to be on 2mbps.  Now I can delete games and reinstall them without the 24 hour+ wait.
   * All of MSIs and Gigabytes Mid range B450 and above have Bios Flashback. I can't remember for other vendors.
 
-  Other topics included life advice, guns, philosophy/logic, fitness, and more.  Others seemed focus on language rather than content.  One specifically had many comments that used % and $ symbols, and another specifically had comments explicitly referencing subreddits, so a lot of 'r/' tokens.
+  Other topics included life advice, guns, philosophy/logic, fitness, and more.  Others seemed to focus on language rather than content.  One specifically had many comments that used % and $ symbols, and another specifically had comments explicitly referencing subreddits, so a lot of 'r/' tokens.
 
 ## Conclusion
 
