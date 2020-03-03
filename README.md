@@ -33,7 +33,7 @@ I've used reddit over the years, and I was curious how some of the more popular 
 Where I got the data:
 * [Google Big Query](https://bigquery.cloud.google.com/dataset/fh-bigquery:reddit_comments)
 
-I queried the reddit_comments database on Google Big Query, specifically looking at comments between January and September of 2019.  Querying only long form comments (over 100 characters and excluding links and other forms of unhelpful punctuation), I picked the top comments from 101 active subreddits, which represent a fairly diverse set of topics.  The entire list of subreddits I picked can be seen [here]().  
+I queried the reddit_comments database on Google Big Query, specifically looking at comments between January and September of 2019.  Querying only long form comments (over 100 characters and excluding links and other forms of unhelpful punctuation), I picked the top comments from 101 active subreddits, which represent a fairly diverse set of topics.  The entire list of subreddits I picked can be seen [here](https://github.com/walker777007/A-Deep-Dive-into-Reddit-Comments/blob/master/listofsubreddits.txt).  
 
 Once all the indivudal CSV files were queried using SQL, I used pandas in order to group them into dataframes, and proceeded to do all my calculations and tests after.  I originally had over 10 million comments in total, but due to computation time, I had to cut it down to a total of 1,010,000 comments (10,000 per subreddit).  Even with a million comments, computation time was still pretty steep, so I used an AWS EC2 instance for the more heavy calculations.
 
@@ -66,3 +66,19 @@ As well, I decided to use t-distributed stochastic neighbor embedding (which I w
 <img src="plots/sentimentmap.png" width="1000" height="475">
 </p>
 The cluster of subreddits in the top left corner tend to be the negative sentiment subredits, as we can see by the inclusion of all the political ones and r/depression.  Interestingly enough, freefolk, the game of thrones subreddit, and StarWars are close by (It seems like those fanbases are prickly).  On the middle right edge of the plot, we can see the happier subreddits, including the animal themed ones as well as r/wholesomememes and r/HumansBeingBros which are both explicitly based on being positive subreddits.
+
+## Topic Modeling
+
+In order to vectorize the comments, I contemplated using several NLP techniques such as:
+* **[TF-IDF](https://en.wikipedia.org/wiki/Tf%E2%80%93idf)**: Term frequency–inverse document frequency reflects how important words are to a corpus.
+* **Count Vectorize**: Simply converts the corpus into word counts
+* **[Word2Vec](https://en.wikipedia.org/wiki/Word2vec)**: Produces word embeddings through a neural network.  This means that each word's meaning is represented by a vector. For example, the vector "king" -"man" would result in the "queen" vector.  
+* **[Doc2Vec](https://medium.com/wisio/a-gentle-introduction-to-doc2vec-db3e8c0cce5e)**: Building upon Word2Vec, Doc2Vec essentially tries to embed the contextual meaning of each document
+
+After much debate, the method I ended up using was Word2Vec.  By getting each embedding for a word in the comment and then taking the mean of all the component vectors, each comment can be seen as being the collection of all of its individual word meanings.  So if the comment is "I love food", the comments vector can be seen as the average of the individual meanings of "love" and "food".
+
+### GloVe Word2Vec
+
+I contemplated training my own Word2Vec on my corpus, but I learned there are publicly available trained Word2Vec models such as the [Google News model](https://code.google.com/archive/p/word2vec/) and the [GloVe twitter model](https://nlp.stanford.edu/projects/glove/).  Trained on over 2 billion tweets, I decided to use the GloVe model, since my assumption is reddit comments will likely have similar contextual meanings as tweets.  The model was directly downloaded through the [Gensim package on Python](https://radimrehurek.com/gensim/auto_examples/howtos/run_downloader_api.html).  Each word in the GloVe twitter model is represented by a 200 dimensional vector, and contains a vocabulary of 1.2 million words.
+
+### T-distributed Stochastic Neighbor Embedding
