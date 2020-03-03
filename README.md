@@ -65,3 +65,4 @@ As well, I decided to use t-distributed stochastic neighbor embedding (which I w
 <p align="center">
 <img src="plots/sentimentmap.png" width="1000" height="475">
 </p>
+The cluster of subreddits in the top left corner tend to be the negative sentiment subredits, as we can see by the inclusion of all the political ones and r/depression.  Interestingly enough, freefolk, the game of thrones subreddit, and StarWars are close by (It seems like those fanbases are prickly).  On the middle right edge of the plot, we can see the happier subreddits, including the animal themed ones as well as r/wholesomememes and r/HumansBeingBros which are both explicitly based on being positive subreddits.
