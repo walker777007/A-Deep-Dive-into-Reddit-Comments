@@ -110,6 +110,10 @@ And here we an get a look at the cluster on the original 1 million + dataset:
 <p align="center">
 <img src="plots/kmeanstotal61.png" width="1000" height="500">
 </p>
+However, if we cluster first and then apply TSNE, we can see that the cluster shapes are preserved much better, as the polygon-esque shapes dissapear.  But the downside of this, is that we can't plot the centroids, as they exist in 200 dimensional space, so the cluster locations are less interpretable.
+<p align="center">
+<img src="plots/kmeansprior.png" width="1000" height="500">
+</p>
 Here are some examples of the topics the clustering was able to pick up, using some of the nearest comments to the cluster centroid:
 
 * **Cluster 0**: "Travel"
